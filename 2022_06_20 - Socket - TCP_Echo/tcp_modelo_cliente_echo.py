@@ -20,8 +20,9 @@ while True:
         # Enviando a mensagem ao servidor      
         tcp_socket.send(msg)
 
-        data        = tcp_socket.recv(BUFFER_SIZE)
-        msg_retorno = data.decode(CODE_PAGE)
+        # Recebendo echo do servidor
+        data_retorno = tcp_socket.recv(BUFFER_SIZE)
+        msg_retorno  = data_retorno.decode(CODE_PAGE)
         print(f'Echo Recebido: {msg_retorno}')
 
 # Fechando o socket

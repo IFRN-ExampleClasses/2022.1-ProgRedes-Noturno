@@ -24,9 +24,8 @@ while True:
       # Imprimindo a mensagem recebida convertendo de bytes para string
       print(cliente, msg.decode(CODE_PAGE))
       # Devolvendo uma mensagem (echo) ao cliente
-      if msg:
-        msg_retorno = 'Devolvendo...' + msg.decode(CODE_PAGE)
-        con.send(msg_retorno.encode(CODE_PAGE))
+      msg_retorno = 'Devolvendo...' + msg.decode(CODE_PAGE)
+      con.send(msg_retorno.encode(CODE_PAGE))
 
    print('Finalizando Conexão do Cliente ', cliente)
    con.close()
