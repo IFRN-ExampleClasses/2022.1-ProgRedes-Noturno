@@ -2,7 +2,7 @@
 import socket
 
 HOST        = 'localhost' # Definindo o IP do servidor
-PORT        = 50000       # Definindo a porta
+PORT        = 40000       # Definindo a porta
 CODE_PAGE   = 'utf-8'     # Definindo a página de codificação de caracteres
 BUFFER_SIZE = 512         # Definindo o tamanho do buffer
 
@@ -20,6 +20,6 @@ while True:
     # Recebendo echo do servidor
     data_retorno, ip_retorno = udp_socket.recvfrom(4096)
     msg_retorno = data_retorno.decode(CODE_PAGE)
-    print (f'Echo recebido: {msg_retorno} ')
+    print (f'Echo recebido {ip_retorno}: {msg_retorno} ')
 # Fechando o socket
 udp_socket.close()

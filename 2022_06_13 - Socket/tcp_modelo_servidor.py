@@ -3,7 +3,7 @@ import socket
 
 HOST        = ''      # Definindo o IP do servidor
 PORT        = 65000   # Definindo a porta
-BUFFER_SIZE = 8    # Definindo o tamanho do buffer
+BUFFER_SIZE = 8       # Definindo o tamanho do buffer
 CODE_PAGE   = 'utf-8' # Definindo a página de codificação de caracteres
 MAX_LISTEN  = 3       # Definindo o máximo de conexões enfileiradas
 

@@ -3,9 +3,9 @@ import socket
 
 HOST        = ''      # Definindo o IP do servidor
 PORT        = 65000   # Definindo a porta
-BUFFER_SIZE = 512     # Definindo o tamanho do buffer
+BUFFER_SIZE = 10      # Definindo o tamanho do buffer
 CODE_PAGE   = 'utf-8' # Definindo a página de codificação de caracteres
-MAX_LISTEN  = 3       # Definindo o máximo de conexões enfileiradas
+MAX_LISTEN  = 10       # Definindo o máximo de conexões enfileiradas
 
 # Criando o socket TCP
 tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -3,7 +3,7 @@ import socket
 
 HOST        = 'localhost' # Definindo o IP do servidor
 PORT        = 65000       # Definindo a porta
-BUFFER_SIZE = 512         # Definindo o tamanho do buffer
+BUFFER_SIZE = 10          # Definindo o tamanho do buffer
 CODE_PAGE   = 'utf-8'     # Definindo a página de codificação de caracteres
 
 # Criando o socket UDP

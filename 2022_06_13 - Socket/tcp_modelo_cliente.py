@@ -2,7 +2,7 @@
 import socket
 
 HOST = 'localhost' #Definindo o IP do servidor
-PORT = 50000 #Definindo a porta
+PORT = 65000 #Definindo a porta
 
 # Criando o socket UDP
 tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
