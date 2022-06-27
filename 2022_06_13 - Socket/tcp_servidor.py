@@ -38,7 +38,7 @@ try:
          else:
             print(f'{ip_cliente}->  {mensagem}')
 except:
-    print(f'\nERRO: {sys.exc_info()[0]}')
+   print(f'\nERRO: {sys.exc_info()[0]}')
 finally:    
    print('Derrubando o servidor...', ip_cliente)
    conexao.close()

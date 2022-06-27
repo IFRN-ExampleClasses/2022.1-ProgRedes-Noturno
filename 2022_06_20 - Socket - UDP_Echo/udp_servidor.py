@@ -3,9 +3,9 @@ import sys, socket
 
 # Definindo as constantes do programa
 HOST        = ''            # Definindo o IP do servidor
-PORT        = 65000         # Definindo a porta
+PORT        = 60000         # Definindo a porta
 CODE_PAGE   = 'utf-8'       # Definindo a página de código de caracteres
-BUFFER_SIZE = 1024          # Definindo o tamanho do buffer
+BUFFER_SIZE = 512           # Definindo o tamanho do buffer
 
 # Criando o socket UDP
 udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
